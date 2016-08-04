@@ -1,0 +1,163 @@
+.modal-header, h4, .close {
+    /*background-color: #5cb85c;*/
+    /*color:white !important;*/
+    /*text-align: center;*/
+    /*font-size: 30px;*/
+}
+
+.modal-footer {
+    /*background-color: #f9f9f9;*/
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-dialog {
+    width: 900px;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+#modal-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2b4c83;
+}
+
+.modal-body {
+    padding: 0 50px 50px 50px;
+}
+
+#modal-controls {
+    /*margin: 0 auto 0 auto;*/
+    /*display: inherit;*/
+    margin: 50px auto 0 auto;
+    /*width: 656px;*/
+    text-align: center;
+}
+
+.modal-control-button {
+    display: inline-block;
+}
+
+.modal-control-button button {
+    background-color: #2b4c83;
+    border-radius: 0;
+    border: none;
+    color: white;
+    font-size: 2.5em;
+    padding: 0 90px;
+    margin: 0 13px;
+}
+
+.modal-control-button button:hover {
+    color: white;
+    background-color: #496bba;
+    border-color: #adadad;
+}
+
+.modal-control-button button:focus{
+    color: white;
+    background-color: #496bba;
+    border-color: #adadad;
+}
+
+.modal-control-button button span {
+    vertical-align: -5px;
+}
+
+.modal-control-button p {
+    font-size: 0.7em;
+    color: #808080;
+    font-style: italic;
+}
+
+#modal-text {
+    font-size: 1.1em;
+}
+
+#modal-contact-info h1 {
+    color: #2b4c83;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#modal-contact-info h1 span {
+    color: #7595cb;
+    font-size: 0.7em;
+    text-transform: none;
+}
+
+#modal-contact-info p {
+    font-size: 1.1em;
+    color: #2b4c83;
+    text-align: center;
+}
+
+#modal-submit-button {
+    background-color: #f08c0d;
+    border-radius: 0;
+    border: none;
+    color: white;
+    font-size: 1.82em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 13px;
+}
+
+#modal-submit-button:hover {
+    background-color: #ff8d00;
+}
+
+#modal-send-form {
+    margin-top: 33px;
+}
+
+#modal-submit-button-div p {
+    font-size: 0.7em;
+    color: #808080;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+#modal-send-form input {
+    border-radius: 0;
+    border: none;
+    background-color: #d7d8d9;
+    margin: 14px 0;
+    height: 30px;
+}
+
+#modal-send-form input:hover {
+    box-shadow: none;
+}
+
+#modal-send-form input:focus {
+    box-shadow: none;
+}
+
+#modal-send-form input::-webkit-input-placeholder {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#modal-send-form input:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#modal-send-form input::-moz-placeholder { /* Firefox 19+ */
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#modal-send-form input:-ms-input-placeholder {
+    font-style: italic;
+    font-size: 0.9em;
+}

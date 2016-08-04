@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/MediaStreamRecorder.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Test Popup</h2>
+    <button id="show-modal" type="button" class="btn btn-default btn-lg" data-toggle="modal"
+            data-target="#modal-record">Show Popup
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-record" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 id="modal-title" style="">please, read this text aloud</h1>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-text">
+                        Job hunting is the act of looking for employment, discontent with a current position, or a
+                        desire for a better opportunity. The immediate goal is usually to obtain an interview with an
+                        employer which may lead to getting hired.
+                        <br><br>
+                        Many job seekers research the companies to which they are applying, and some see evidence of
+                        this as a positive sign of enthusiasm for the position, or as a mark of thoroughness.
+                        Information collected might include a web-site, business description, year established,
+                        revenues, major products, competitors, and strengths and weaknesses.
+                        <br><br>
+                        Contacting as many people as possible is a highly effective way to find a job. It is estimated
+                        that 50% or higher of all jobs are found through networking. Job recruiters and decision makers
+                        are increasingly using online social networks to gather information about job applicants.
+                    </p>
+
+                    <div id="modal-controls">
+                        <div class="modal-control-button">
+                            <button id="modal-record-button" type="button" class="btn btn-default"><span
+                                    class="glyphicon glyphicon glyphicon-record"></span></button>
+                            <p>Click to record your reading aloud</p>
+                        </div>
+                        <div class="modal-control-button">
+                            <button id="modal-play-button" type="button" class="btn btn-default"><span
+                                    class="glyphicon glyphicon glyphicon-play-circle"></span></button>
+                            <p>Click to listen yourself</p>
+                        </div>
+                    </div>
+
+                    <div id="modal-contact-info">
+                        <h1>What to get a professional opinion? <span>Send us your recording.</span></h1>
+                        <p>Our instructor will email you a feedback within 24 hours.</p>
+                    </div>
+
+                    <div id="modal-send-form" class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" id="modal-user-name" placeholder="Your name">
+                                <input type="text" class="form-control" id="modal-user-email" placeholder="Your email">
+                            </div>
+                            <div id="modal-submit-button-div" class="col-lg-4">
+                                <p>Your latest recording will be emailed to our instructor.</p>
+                                <a id="modal-submit-button" type="submit" class="btn btn-success" data-toggle="popover"
+                                   title="Thank you!" data-placement="top"
+                                   data-content="We will email you results in 24 hours">get your accent review
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
