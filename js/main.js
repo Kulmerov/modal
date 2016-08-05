@@ -77,8 +77,12 @@
 
                 mediaRecorder.ondataavailable = function (blob) {
                     blobToSend = blob;
-                    player.src = URL.createObjectURL(blob);
-                    // player.play();
+                    // player.src = URL.createObjectURL(blob);
+                    var reader = new window.FileReader();
+                    reader.readAsDataURL(blob);
+                    reader.onloadend = function() {
+                        player.src = reader.result;
+                    };
 
                 };
                 mediaRecorder.start(250 * 1000);
