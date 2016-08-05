@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1200px) and (max-width: 1270px) {
+    #modal-submit-button {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #modal-submit-button {
+        font-size: 1.27em;
+    }
+}

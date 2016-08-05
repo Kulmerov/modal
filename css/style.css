@@ -2,9 +2,9 @@
     border-bottom: none;
 }
 
-.modal-dialog {
-    width: 67%;
-}
+/*.modal-dialog {*/
+    /*width: 67%;*/
+/*}*/
 
 .modal-header {
     text-align: center;
@@ -90,13 +90,16 @@
 }
 
 #modal-submit-button {
+    margin: 0 auto 0 auto;
+    display: table;
+    /*width: 380px;*/
     line-height: 36px;
     height: 76px;
     background-color: #f08c0d;
     border-radius: 0;
     border: none;
     color: white;
-    font-size: 1.28em;
+    font-size: 1.27em;
     text-transform: uppercase;
     font-weight: bold;
     padding: 20px 13px;
