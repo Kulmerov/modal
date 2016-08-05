@@ -47,11 +47,7 @@
             trigger: 'focus',
             placement: 'top',
             content: function () {
-                // var message = validateAll();
-                // if (message) {
-                //     return message;
-                // }
-                if (blobToSend === null) {
+                if (blobToSend === null && spanTag.hasClass("glyphicon-record")) {
                     return "First make a record!";
                 }
             }
@@ -64,7 +60,8 @@
             // }
 
             if (spanTag.hasClass("glyphicon-stop")) {
-                playTag.click();
+                replaceClass(spanTag, "glyphicon-stop", "glyphicon-record");
+                mediaRecorder.stop();
                 return;
             }
 
@@ -94,14 +91,15 @@
         });
 
         playTag.click(function () {
-            if (spanTag.hasClass("glyphicon-record") && blobToSend !== null) {
+            if (mediaRecorder !== null) {
+                mediaRecorder.stop();
+                replaceClass(spanTag, "glyphicon-stop", "glyphicon-record");
+            }
+            if (blobToSend !== null) {
                 player.pause();
                 player.currentTime = 0;
                 player.play();
-                return;
             }
-            replaceClass(spanTag, "glyphicon-stop", "glyphicon-record");
-            mediaRecorder.stop();
         });
 
 
