@@ -1,14 +1,3 @@
-.modal-header, h4, .close {
-    /*background-color: #5cb85c;*/
-    /*color:white !important;*/
-    /*text-align: center;*/
-    /*font-size: 30px;*/
-}
-
-.modal-footer {
-    /*background-color: #f9f9f9;*/
-}
-
 .modal-header {
     border-bottom: none;
 }
@@ -22,9 +11,11 @@
 }
 
 #modal-title {
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     color: #2b4c83;
+    text-align: center;
 }
 
 .modal-body {
@@ -32,10 +23,7 @@
 }
 
 #modal-controls {
-    /*margin: 0 auto 0 auto;*/
-    /*display: inherit;*/
-    margin: 50px auto 0 auto;
-    /*width: 656px;*/
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -80,8 +68,9 @@
 }
 
 #modal-contact-info h1 {
+    line-height: 1;
     color: #2b4c83;
-    font-size: 1.9em;
+    font-size: 2.7em;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -94,17 +83,20 @@
 }
 
 #modal-contact-info p {
+    margin-top: 9px;
     font-size: 1.1em;
     color: #2b4c83;
     text-align: center;
 }
 
 #modal-submit-button {
+    line-height: 36px;
+    height: 76px;
     background-color: #f08c0d;
     border-radius: 0;
     border: none;
     color: white;
-    font-size: 1.82em;
+    font-size: 1.28em;
     text-transform: uppercase;
     font-weight: bold;
     padding: 20px 13px;
@@ -115,7 +107,7 @@
 }
 
 #modal-send-form {
-    margin-top: 33px;
+    margin-top: 8px;
 }
 
 #modal-submit-button-div p {
